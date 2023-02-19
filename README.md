@@ -22,7 +22,7 @@ pod 'iModels'
 
 ## Author
 
-anbu94p@gmail.com
+[Anbalagan D](mailto:anbu94p@gmail.com)
 
 ## License
 
