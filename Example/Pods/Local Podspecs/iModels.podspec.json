@@ -1,0 +1,22 @@
+{
+  "name": "iModels",
+  "version": "0.1.0",
+  "summary": "A short description of iModels.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/anbu94p@gmail.com/iModels",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "anbu94p@gmail.com": "anbu94p@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/anbu94p@gmail.com/iModels.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "iModels/Classes/**/*"
+}

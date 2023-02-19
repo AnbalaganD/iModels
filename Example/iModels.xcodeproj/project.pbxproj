@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		34F9E6C80AFD637A44123E9C /* Pods_iModels_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iModels_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		600799B0113223D628A3F5DA /* iModels.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = iModels.podspec; path = ../iModels.podspec; sourceTree = "<group>"; };
+		600799B0113223D628A3F5DA /* iModels.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iModels.podspec; path = ../iModels.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* iModels_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iModels_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,13 +40,13 @@
 		607FACE51AFB9204008FA782 /* iModels_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iModels_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		65B0D200C1ED819B1390F0FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		65B0D200C1ED819B1390F0FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7872E3930A26A6929B08FF15 /* Pods-iModels_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iModels_Example.debug.xcconfig"; path = "Target Support Files/Pods-iModels_Example/Pods-iModels_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		924407CB52FCC57B26526545 /* Pods-iModels_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iModels_Tests.debug.xcconfig"; path = "Target Support Files/Pods-iModels_Tests/Pods-iModels_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B03F85F44A64D2BCB4DAF0A /* Pods-iModels_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iModels_Tests.release.xcconfig"; path = "Target Support Files/Pods-iModels_Tests/Pods-iModels_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A70C405AC9A7BC760376A39B /* Pods_iModels_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iModels_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96DB3AB55FF20D1D6C413E5 /* Pods-iModels_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iModels_Example.release.xcconfig"; path = "Target Support Files/Pods-iModels_Example/Pods-iModels_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DD1045A08804BBD1AA568C34 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DD1045A08804BBD1AA568C34 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				924407CB52FCC57B26526545 /* Pods-iModels_Tests.debug.xcconfig */,
 				9B03F85F44A64D2BCB4DAF0A /* Pods-iModels_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

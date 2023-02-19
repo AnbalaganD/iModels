@@ -1,0 +1,27 @@
+PODS:
+  - iModels (0.1.0)
+  - Nimble (10.0.0)
+  - Quick (2.2.1)
+
+DEPENDENCIES:
+  - iModels (from `../`)
+  - Nimble (~> 10.0.0)
+  - Quick (~> 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  iModels:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iModels: 35768e2133bfe7e09d0f88abf5e8a94be9e75fc6
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+
+PODFILE CHECKSUM: e7c618633fa1ac36960b780e70823c1584ff97d1
+
+COCOAPODS: 1.11.3
