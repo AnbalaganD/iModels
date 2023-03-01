@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-This library help developer to easily find the device model. This information is more useful to get statistics of which model version is have more user base. likewise it have lot of other benifit too.
+This library help developer to easily find the device model. This information is more useful to get statistics of which
+model version is have more user base. likewise it have lot of other benifit too.
                        DESC
 
   s.homepage         = 'https://github.com/AnbalaganD/iModels.git'

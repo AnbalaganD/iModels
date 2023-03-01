@@ -50,7 +50,7 @@
 		51BAE003E7BD972B4F6EB54CFB7E1BF0 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C53E4A4BD96DA70A1FF6A6EF6409FC2 /* RaisesException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		5258586AADBC8482EFAFB4B591A17E03 /* ToSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5100F28739CC7C42E629FEFA59D6EDD6 /* ToSucceed.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		536B70B43A9AAFA6C724977674A47483 /* QuickConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762EBC5F74C0131A7CFB3173DEC4D053 /* QuickConfiguration.swift */; };
-		54B3B50729AF204200FDD7A7 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3B50629AF204200FDD7A7 /* UIDeviceExtension.swift */; };
+		54B3B50F29AF271300FDD7A7 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3B50E29AF271300FDD7A7 /* UIDeviceExtension.swift */; };
 		586F823C4C048A55335C1952B4B1BF51 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A933791731EFC288AE4AF1B83B9C2 /* Example.swift */; };
 		58CAB839E63D7D4575D3DEDF8C98EDD9 /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B3E03AB7BC3EDB7D3B86A18FA90E5 /* Await.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		5B70B7A48D33851645A970DA8AD85CD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
@@ -200,7 +200,7 @@
 		5015FDA0C96B5CD1C5072330A94E21D5 /* Pods-iModels_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iModels_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5100F28739CC7C42E629FEFA59D6EDD6 /* ToSucceed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToSucceed.swift; path = Sources/Nimble/Matchers/ToSucceed.swift; sourceTree = "<group>"; };
 		52F65FA44C868EAEA97967B2662BE114 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Quick/Filter.swift; sourceTree = "<group>"; };
-		54B3B50629AF204200FDD7A7 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		54B3B50E29AF271300FDD7A7 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDeviceExtension.swift; path = iModels/Classes/UIDeviceExtension.swift; sourceTree = "<group>"; };
 		55BF97F3EC3952EAA872604C906EEDF8 /* NMBExpectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBExpectation.swift; path = Sources/Nimble/Adapters/NMBExpectation.swift; sourceTree = "<group>"; };
 		575BA84ABE043EC0F45DDB202FB31396 /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Sources/NimbleObjectiveC/DSL.m; sourceTree = "<group>"; };
 		5AE669A1BDDE1D1C90673E95B22A92D9 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
@@ -408,7 +408,7 @@
 		23460D3B1DCFD9DB5B7107D282D22CCC /* iModels */ = {
 			isa = PBXGroup;
 			children = (
-				54B3B50629AF204200FDD7A7 /* UIDeviceExtension.swift */,
+				54B3B50E29AF271300FDD7A7 /* UIDeviceExtension.swift */,
 				D8A7C350726825D02CA379E9D1659233 /* Pod */,
 				6B6C157936A9F5BB0BAE93B642D8618D /* Support Files */,
 			);
@@ -998,7 +998,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E8A7875236586E31BDAE47C294857D4 /* iModels-dummy.m in Sources */,
-				54B3B50729AF204200FDD7A7 /* UIDeviceExtension.swift in Sources */,
+				54B3B50F29AF271300FDD7A7 /* UIDeviceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
