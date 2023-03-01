@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  iModels
 //
-//  Created by anbu94p@gmail.com on 02/18/2023.
-//  Copyright (c) 2023 anbu94p@gmail.com. All rights reserved.
+//  Created by Anbalagan D on 02/18/2023.
+//  Copyright (c) 2023 Anbalagan D. All rights reserved.
 //
 
 import UIKit
