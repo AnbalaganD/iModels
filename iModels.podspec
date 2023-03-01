@@ -30,7 +30,7 @@ model version is have more user base. likewise it have lot of other benifit too.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.swift_version    = '5.7'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'iModels/Classes/**/*'
   
