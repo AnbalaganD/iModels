@@ -1,22 +1,24 @@
 {
   "name": "iModels",
   "version": "0.1.0",
-  "summary": "A short description of iModels.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/anbu94p@gmail.com/iModels",
+  "summary": "This library provide device(iPhone) model name with human readable way",
+  "description": "This library help developer to easily find the device model. This information is more useful to get statistics of which\nmodel version is have more user base. likewise it have lot of other benifit too.",
+  "homepage": "https://github.com/AnbalaganD/iModels.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "anbu94p@gmail.com": "anbu94p@gmail.com"
+    "Anbalagan D": "anbu94p@gmail.com"
   },
   "source": {
-    "git": "https://github.com/anbu94p@gmail.com/iModels.git",
+    "git": "https://github.com/AnbalaganD/iModels.git",
     "tag": "0.1.0"
   },
+  "swift_versions": "5.7",
   "platforms": {
-    "ios": "10.0"
+    "ios": "11.0"
   },
-  "source_files": "iModels/Classes/**/*"
+  "source_files": "iModels/Classes/**/*",
+  "swift_version": "5.7"
 }
