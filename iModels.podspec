@@ -25,9 +25,9 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Anbalagan D' => 'anbu94p@gmail.com' }
   s.source           = { :git => 'https://github.com/AnbalaganD/iModels.git', :tag => s.version.to_s }
-  s.swift_version    = '5.7'
+  s.swift_version    = '5.8'
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'iModels/Classes/**/*'
+  s.source_files = 'Sources/iModels/Classes/**/*'
 end
