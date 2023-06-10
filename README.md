@@ -1,15 +1,14 @@
 # iModels
 
-[![CI Status](https://img.shields.io/travis/anbu94p@gmail.com/iModels.svg?style=flat)](https://travis-ci.org/anbu94p@gmail.com/iModels)
 [![Version](https://img.shields.io/cocoapods/v/iModels.svg?style=flat)](https://cocoapods.org/pods/iModels)
 [![License](https://img.shields.io/cocoapods/l/iModels.svg?style=flat)](https://cocoapods.org/pods/iModels)
 [![Platform](https://img.shields.io/cocoapods/p/iModels.svg?style=flat)](https://cocoapods.org/pods/iModels)
 
+This library facilitates developers in easily determining the device model, which is particularly valuable for gathering statistics on user device distribution. It offers various other benefits as well.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 

@@ -18,27 +18,16 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-This library help developer to easily find the device model. This information is more useful to get statistics of which
-model version is have more user base. likewise it have lot of other benifit too.
+  This library facilitates developers in easily determining the device model, which is particularly valuable for gathering statistics on user device distribution. It offers various other benefits as well.
                        DESC
 
   s.homepage         = 'https://github.com/AnbalaganD/iModels.git'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Anbalagan D' => 'anbu94p@gmail.com' }
   s.source           = { :git => 'https://github.com/AnbalaganD/iModels.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.swift_version    = '5.7'
 
   s.ios.deployment_target = '12.0'
 
   s.source_files = 'iModels/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'iModels' => ['iModels/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
