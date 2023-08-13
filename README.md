@@ -12,12 +12,25 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
+### CocoaPods
+
 iModels is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'iModels'
 ```
+
+### Swift Package manager (SPM)
+
+iModels is available through [SPM](https://github.com/AnbalaganD/iModels). Use below URL to add as a dependency
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/AnbalaganD/iModels", .upToNextMajor(from: "0.1.1"))
+]
+```
+
 
 ## Author
 
