@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iModels'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'This library provide device(iPhone) model name with human readable way'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Anbalagan D' => 'anbu94p@gmail.com' }
   s.source           = { :git => 'https://github.com/AnbalaganD/iModels.git', :tag => s.version.to_s }
-  s.swift_version    = '5.8'
+  s.swift_version    = '5.9'
 
   s.ios.deployment_target = '12.0'
 
