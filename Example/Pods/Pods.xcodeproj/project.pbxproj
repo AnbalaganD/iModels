@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1AB65C10465D5CF4AF796F08F25C9502 /* Pods-iModels_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1009810F976D224DAA59B1BD3DD9FE4 /* Pods-iModels_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34FE9784A8FE8196746C58D8ABBEB96B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		49D432B8CE29C64EAEC90B5DE5263841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5F0765CC509499B0361DB4508DF70891 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531C1017E8FA8698E5045754C74F8F6 /* UIDeviceExtension.swift */; };
+		5F0765CC509499B0361DB4508DF70891 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531C1017E8FA8698E5045754C74F8F6 /* Device.swift */; };
 		8E98624C39B709BD0170565F44898603 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		98E9D293585ECAB0B1BC41A7F23DC817 /* iModels-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C2E6DB0A51F612EE59986C08B9C678 /* iModels-dummy.m */; };
 		9E66ED3A291C750629081E187C69B13F /* Pods-iModels_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E91A47ED4EBD61DFEB9BB72166C1B23 /* Pods-iModels_Example-dummy.m */; };
@@ -56,7 +56,7 @@
 		7E91A47ED4EBD61DFEB9BB72166C1B23 /* Pods-iModels_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iModels_Example-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A443B60836E5872B6A841C4FDD0C2892 /* Pods-iModels_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iModels_Example-frameworks.sh"; sourceTree = "<group>"; };
-		A531C1017E8FA8698E5045754C74F8F6 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIDeviceExtension.swift; path = Sources/iModels/Classes/UIDeviceExtension.swift; sourceTree = "<group>"; };
+		A531C1017E8FA8698E5045754C74F8F6 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Sources/iModels/Classes/Device.swift; sourceTree = "<group>"; };
 		A62ADAB42B6425E20B265E8CFEAE9ED0 /* Pods-iModels_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iModels_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B1009810F976D224DAA59B1BD3DD9FE4 /* Pods-iModels_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iModels_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B174EBE04A4515F748A7D944A1F61B20 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		76FD3079933A616F3DD98D59F5F74351 /* iModels */ = {
 			isa = PBXGroup;
 			children = (
-				A531C1017E8FA8698E5045754C74F8F6 /* UIDeviceExtension.swift */,
+				A531C1017E8FA8698E5045754C74F8F6 /* Device.swift */,
 				E3DA4B224D34B219438A9B0DE0627F0B /* Pod */,
 				2EC80A1D34D072A2C32CE7AEA328FA48 /* Support Files */,
 			);
@@ -317,7 +317,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1510;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -377,7 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98E9D293585ECAB0B1BC41A7F23DC817 /* iModels-dummy.m in Sources */,
-				5F0765CC509499B0361DB4508DF70891 /* UIDeviceExtension.swift in Sources */,
+				5F0765CC509499B0361DB4508DF70891 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +482,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -663,6 +664,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (

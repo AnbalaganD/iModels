@@ -1,5 +1,5 @@
 //
-//  DeviceModel.swift
+//  Device.swift
 //  iModels
 //
 //  Created by Anbalagan D on 01/03/23.
