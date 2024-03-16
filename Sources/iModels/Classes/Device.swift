@@ -14,13 +14,12 @@ public enum Device {
 #else
         var systemInfo = utsname()
         uname(&systemInfo)
-
-        let machineMirror = Mirror(reflecting: systemInfo.machine)
-        let identifier = machineMirror.children.reduce("") { identifier, element in
-            guard let value = element.value as? Int8, value != 0 else {
-                return identifier
+        
+        let identifier = withUnsafeBytes(of: &systemInfo.machine) { ptr in
+            guard let cPtr = ptr.baseAddress?.assumingMemoryBound(to: CChar.self) else {
+                return ""
             }
-            return identifier + String(UnicodeScalar(UInt8(value)))
+            return String(cString: cPtr)
         }
 
         return switch identifier {
