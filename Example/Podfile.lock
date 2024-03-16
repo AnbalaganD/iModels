@@ -1,5 +1,5 @@
 PODS:
-  - iModels (0.1.0)
+  - iModels (0.1.2)
 
 DEPENDENCIES:
   - iModels (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  iModels: 3d5e074f5db6774dc32c97f0dc173d7f5477b216
+  iModels: 9b4bbae1bf77eb76b1da7c3b7af68336a6c44434
 
 PODFILE CHECKSUM: cb2f970eed4152f185c20197f778dbe89215361b
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.15.2
