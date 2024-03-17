@@ -32,6 +32,12 @@ dependencies: [
 ]
 ```
 
+## Usage
+```swift
+import iModels
+
+Device.modelName
+```
 
 ## Author
 
