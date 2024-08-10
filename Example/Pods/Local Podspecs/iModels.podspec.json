@@ -1,6 +1,6 @@
 {
   "name": "iModels",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "This library provide device(iPhone) model name with human readable way",
   "description": "This library facilitates developers in easily determining the device model, which is particularly valuable for gathering statistics on user device distribution. It offers various other benefits as well.",
   "homepage": "https://github.com/AnbalaganD/iModels.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/AnbalaganD/iModels.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "swift_versions": "5.9",
   "platforms": {
