@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iModels'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'This library provide device(iPhone) model name with human readable way'
   s.description      = <<-DESC
   This library facilitates developers in easily determining the device model, which is particularly valuable for gathering statistics on user device distribution. It offers various other benefits as well.
