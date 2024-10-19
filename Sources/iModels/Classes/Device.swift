@@ -76,6 +76,10 @@ public enum Device {
             case "iPhone15,5": "iPhone 15 Plus"
             case "iPhone16,1": "iPhone 15 Pro"
             case "iPhone16,2": "iPhone 15 Pro Max"
+            case "iPhone17,1": "iPhone 16 Pro"
+            case "iPhone17,2": "iPhone 16 Pro Max"
+            case "iPhone17,3": "iPhone 16"
+            case "iPhone17,4": "iPhone 16 Plus"
 
             case "iPod1,1": "1st Gen iPod"
             case "iPod2,1": "2nd Gen iPod"
@@ -220,6 +224,10 @@ public enum Device {
             case "Watch7,3": "Apple Watch Series 9 41mm case (GPS+Cellular)"
             case "Watch7,4": "Apple Watch Series 9 45mm case (GPS+Cellular)"
             case "Watch7,5": "Apple Watch Ultra 2"
+            case "Watch7,8": "Apple Watch Series 10 (GPS)"
+            case "Watch7,9": "Apple Watch Series 10 (GPS)"
+            case "Watch7,10": "Apple Watch Series 10 (GPS + Cellular)"
+            case "Watch7,11": "Apple Watch Series 10 (GPS + Cellular)"
             default: identifier
         }
 #endif
