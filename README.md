@@ -8,11 +8,23 @@
 
 This library facilitates developers in easily determining the device model, which is particularly valuable for gathering statistics on user device distribution. It offers various other benefits as well.
 
-## Example
+## Examples
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the **Example** project, clone the repo, and run `pod install` from the Example directory first, then open the Xcode workspace.
+
+To run the **SPMExample** project, clone the repo, and open the Xcode project.
 
 ## Installation
+
+### Swift Package manager (SPM)
+
+iModels is available through [SPM](https://github.com/AnbalaganD/iModels). Use below URL to add it as a dependency
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/AnbalaganD/iModels", .upToNextMajor(from: "0.1.5"))
+]
+```
 
 ### CocoaPods
 
@@ -23,26 +35,25 @@ it, simply add the following line to your Podfile:
 pod 'iModels'
 ```
 
-### Swift Package manager (SPM)
-
-iModels is available through [SPM](https://github.com/AnbalaganD/iModels). Use below URL to add as a dependency
-
-```swift
-dependencies: [
-    .package(url: "https://github.com/AnbalaganD/iModels", .upToNextMajor(from: "0.1.4"))
-]
-```
-
 ## Usage
 ```swift
 import iModels
 
-Device.modelName
+Device.modelName // The most commonly used
+Device.identifier // Apple's identifiers
+
+// for other device identifiers
+print("\(Device.modelName(for: "iPhone8,2") ?? "unknown")")
+// output: iPhone 6s Plus
 ```
 
-## Author
+#### Simulator Note
+The `Device.modelName` variable will now append the name "Simulator" to the model name when running within the simulator. If you want to avoid this behavior, you can use `Device.modelName(for: Device.identifier)`.
 
-[Anbalagan D](mailto:anbu94p@gmail.com)
+## Authors
+
+* [Anbalagan D](mailto:anbu94p@gmail.com)
+* [Bill Shirley](mailto:bshirley@shirl.com)
 
 ## License
 
