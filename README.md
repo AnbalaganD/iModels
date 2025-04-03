@@ -52,8 +52,8 @@ The `Device.modelName` variable will now append the name "Simulator" to the mode
 
 ## Authors
 
-[Anbalagan D](mailto:anbu94p@gmail.com)
-[Bill Shirley](mailto:bshirley@shirl.com)
+* [Anbalagan D](mailto:anbu94p@gmail.com)
+* [Bill Shirley](mailto:bshirley@shirl.com)
 
 ## License
 
