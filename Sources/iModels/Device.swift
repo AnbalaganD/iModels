@@ -8,9 +8,6 @@
 import Foundation
 
 public enum Device {
-    // Not actually an enumerated type. Just scopes the implementation.
-    
-    
     /// Returns the Apple identifier of the current device.
     public static var identifier: String {
         let identifier: String
@@ -30,7 +27,6 @@ public enum Device {
         return identifier
     }
     
-    
     /// Returns the model name of the current device.
     /// If the `identifier` of the current device is unknown, the identifier is returned.
     /// If the current device is a simulator, " Simulator" will be appended to the model name.
@@ -41,7 +37,6 @@ public enum Device {
         return modelName(for: identifier) ?? identifier
 #endif
     }
-
     
     /// Provides the name of the device model, given the identifier.
     /// - Parameter identifier: the apple defined identifier for a device (i.e. "iPhone6,2", "iPod5.1", "iPad14,10", "Watch6,9"
@@ -254,9 +249,8 @@ public enum Device {
         case "Watch7,10": "Apple Watch Series 10 (GPS + Cellular)"
         case "Watch7,11": "Apple Watch Series 10 (GPS + Cellular)"
             
-            // TODO: Add other identifiers: AppleTV14,1 = Apple TV 4K (3rd Generation), RealityDevice14,1 = Apple Vision Pro
+        // TODO: Add other identifiers: AppleTV14,1 = Apple TV 4K (3rd Generation), RealityDevice14,1 = Apple Vision Pro
         default: nil
         }
     }
-
 }
