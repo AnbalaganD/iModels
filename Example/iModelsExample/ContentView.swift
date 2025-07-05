@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  SPMExample
+//  iModelsExample
 //
 //  Created by Bill Shirley on 4/2/25.
 //
@@ -30,7 +30,6 @@ struct ContentView: View {
     @State private var identifier: String = Device.identifier
     @State private var deviceImage: Image? = Device.image(for: Device.identifier)
     @State private var modelName: String = Device.modelName(for: Device.identifier) ?? ""
-    
     
     var body: some View {
         VStack {

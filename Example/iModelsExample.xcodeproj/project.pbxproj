@@ -11,13 +11,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D81B0452D9DFE6E009066BA /* SPMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D81B0452D9DFE6E009066BA /* iModelsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iModelsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9D81B0472D9DFE6E009066BA /* SPMExample */ = {
+		9D81B0472D9DFE6E009066BA /* iModelsExample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SPMExample;
+			path = iModelsExample;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -37,7 +37,7 @@
 		9D81B03C2D9DFE6E009066BA = {
 			isa = PBXGroup;
 			children = (
-				9D81B0472D9DFE6E009066BA /* SPMExample */,
+				9D81B0472D9DFE6E009066BA /* iModelsExample */,
 				9D81B0462D9DFE6E009066BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,7 +45,7 @@
 		9D81B0462D9DFE6E009066BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D81B0452D9DFE6E009066BA /* SPMExample.app */,
+				9D81B0452D9DFE6E009066BA /* iModelsExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,9 +53,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D81B0442D9DFE6E009066BA /* SPMExample */ = {
+		9D81B0442D9DFE6E009066BA /* iModelsExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D81B0532D9DFE6F009066BA /* Build configuration list for PBXNativeTarget "SPMExample" */;
+			buildConfigurationList = 9D81B0532D9DFE6F009066BA /* Build configuration list for PBXNativeTarget "iModelsExample" */;
 			buildPhases = (
 				9D81B0412D9DFE6E009066BA /* Sources */,
 				9D81B0422D9DFE6E009066BA /* Frameworks */,
@@ -66,14 +66,14 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				9D81B0472D9DFE6E009066BA /* SPMExample */,
+				9D81B0472D9DFE6E009066BA /* iModelsExample */,
 			);
-			name = SPMExample;
+			name = iModelsExample;
 			packageProductDependencies = (
 				9D81B0572D9DFEA6009066BA /* iModels */,
 			);
 			productName = SPMExample;
-			productReference = 9D81B0452D9DFE6E009066BA /* SPMExample.app */;
+			productReference = 9D81B0452D9DFE6E009066BA /* iModelsExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -84,14 +84,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					9D81B0442D9DFE6E009066BA = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 9D81B0402D9DFE6E009066BA /* Build configuration list for PBXProject "SPMExample" */;
+			buildConfigurationList = 9D81B0402D9DFE6E009066BA /* Build configuration list for PBXProject "iModelsExample" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -108,7 +108,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D81B0442D9DFE6E009066BA /* SPMExample */,
+				9D81B0442D9DFE6E009066BA /* iModelsExample */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +169,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JAB7DX4UR6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -192,6 +193,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -232,6 +234,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JAB7DX4UR6;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -248,6 +251,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -260,8 +264,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SPMExample/Preview Content\"";
-				DEVELOPMENT_TEAM = JAB7DX4UR6;
+				DEVELOPMENT_ASSET_PATHS = "\"iModelsExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -289,8 +292,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SPMExample/Preview Content\"";
-				DEVELOPMENT_TEAM = JAB7DX4UR6;
+				DEVELOPMENT_ASSET_PATHS = "\"iModelsExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -314,7 +316,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D81B0402D9DFE6E009066BA /* Build configuration list for PBXProject "SPMExample" */ = {
+		9D81B0402D9DFE6E009066BA /* Build configuration list for PBXProject "iModelsExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D81B0512D9DFE6F009066BA /* Debug */,
@@ -323,7 +325,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D81B0532D9DFE6F009066BA /* Build configuration list for PBXNativeTarget "SPMExample" */ = {
+		9D81B0532D9DFE6F009066BA /* Build configuration list for PBXNativeTarget "iModelsExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D81B0542D9DFE6F009066BA /* Debug */,

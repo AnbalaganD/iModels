@@ -12,7 +12,7 @@ This library facilitates developers in easily determining the device model, whic
 
 To run the **Example** project, clone the repo, and run `pod install` from the Example directory first, then open the Xcode workspace.
 
-To run the **SPMExample** project, clone the repo, and open the Xcode project.
+To run the **iModelsExample** project, clone the repo, and open the Xcode project.
 
 ## Installation
 
@@ -34,6 +34,8 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'iModels'
 ```
+
+> **Note:** CocoaPods updates will not be provided for upcoming releases, as CocoaPods is no longer actively supported and has entered maintenance mode.
 
 ## Usage
 ```swift
