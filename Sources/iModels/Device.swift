@@ -7,8 +7,46 @@
 
 import Foundation
 
+/// A utility for identifying Apple device models from hardware identifiers.
+///
+/// The `Device` enum provides static methods and properties to determine the human-readable
+/// device model name from Apple's internal hardware identifiers. This is useful for analytics,
+/// device compatibility checks, and user interface customization.
+///
+/// ## Usage
+///
+/// ```swift
+/// import iModels
+///
+/// // Get current device model
+/// let model = Device.modelName
+/// print(model) // "iPhone 15 Pro"
+///
+/// // Get current device identifier
+/// let id = Device.identifier
+/// print(id) // "iPhone16,1"
+///
+/// // Get model for specific identifier
+/// let specificModel = Device.modelName(for: "iPhone8,2")
+/// print(specificModel) // "iPhone 6s Plus"
+/// ```
 public enum Device {
-    /// Returns the Apple identifier of the current device.
+    /// The Apple hardware identifier of the current device.
+    ///
+    /// This property returns the internal hardware identifier that Apple uses to distinguish
+    /// between different device models and configurations.
+    ///
+    /// ## Examples
+    ///
+    /// ```swift
+    /// let identifier = Device.identifier
+    /// print(identifier) // "iPhone16,1" (iPhone 15 Pro)
+    /// ```
+    ///
+    /// - Note: In the iOS Simulator, this returns the simulated device's identifier from
+    ///   the `SIMULATOR_MODEL_IDENTIFIER` environment variable.
+    ///
+    /// - Returns: A string representing the device's hardware identifier (e.g., "iPhone16,1").
     public static var identifier: String {
         let identifier: String
 #if targetEnvironment(simulator)
@@ -27,9 +65,35 @@ public enum Device {
         return identifier
     }
     
-    /// Returns the model name of the current device.
-    /// If the `identifier` of the current device is unknown, the identifier is returned.
-    /// If the current device is a simulator, " Simulator" will be appended to the model name.
+    /// The human-readable model name of the current device.
+    ///
+    /// This property returns the marketing name of the current device. If the device identifier
+    /// is not recognized, it falls back to returning the raw identifier.
+    ///
+    /// ## Examples
+    ///
+    /// ```swift
+    /// let modelName = Device.modelName
+    /// print(modelName) // "iPhone 15 Pro"
+    /// ```
+    ///
+    /// ## Simulator Behavior
+    ///
+    /// When running in the iOS Simulator, " Simulator" is automatically appended to the model name:
+    ///
+    /// ```swift
+    /// // On simulator
+    /// print(Device.modelName) // "iPhone 15 Pro Simulator"
+    /// ```
+    ///
+    /// To get the base model name without the "Simulator" suffix, use:
+    ///
+    /// ```swift
+    /// let baseModel = Device.modelName(for: Device.identifier)
+    /// print(baseModel) // "iPhone 15 Pro"
+    /// ```
+    ///
+    /// - Returns: The device's marketing name, or the raw identifier if unknown.
     public static var modelName: String {
 #if targetEnvironment(simulator)
         return "\(modelName(for: identifier) ?? identifier) Simulator"
@@ -38,9 +102,39 @@ public enum Device {
 #endif
     }
     
-    /// Provides the name of the device model, given the identifier.
-    /// - Parameter identifier: the apple defined identifier for a device (i.e. "iPhone6,2", "iPod5.1", "iPad14,10", "Watch6,9"
-    /// - Returns: the model name or `nil` if the identifier is not recognized
+    /// Returns the human-readable model name for a specific device identifier.
+    ///
+    /// This method maps Apple's internal hardware identifiers to their corresponding
+    /// marketing names. It supports all released Apple devices including iPhone, iPad,
+    /// iPod touch, Apple Watch, Apple TV, and Apple Vision Pro.
+    ///
+    /// ## Examples
+    ///
+    /// ```swift
+    /// let model1 = Device.modelName(for: "iPhone8,2")
+    /// print(model1) // Optional("iPhone 6s Plus")
+    ///
+    /// let model2 = Device.modelName(for: "iPad13,1")
+    /// print(model2) // Optional("iPad Air 4th Gen (WiFi)")
+    ///
+    /// let model3 = Device.modelName(for: "Watch6,18")
+    /// print(model3) // Optional("Apple Watch Ultra")
+    ///
+    /// let unknown = Device.modelName(for: "UnknownDevice1,1")
+    /// print(unknown) // nil
+    /// ```
+    ///
+    /// ## Supported Device Types
+    ///
+    /// - **iPhone**: All models from original iPhone to iPhone 16 series
+    /// - **iPad**: All iPad, iPad Air, iPad Pro, and iPad mini models
+    /// - **iPod**: All iPod touch generations
+    /// - **Apple Watch**: All Apple Watch models including SE and Ultra
+    /// - **Apple TV**: Apple TV 4K models
+    /// - **Apple Vision**: Apple Vision Pro
+    ///
+    /// - Parameter identifier: The Apple-defined hardware identifier (e.g., "iPhone16,1", "iPad13,1", "Watch6,18").
+    /// - Returns: The human-readable model name, or `nil` if the identifier is not recognized.
     public static func modelName(for identifier: String) -> String? {
         return switch identifier {
         case "iPhone1,1": "iPhone"
