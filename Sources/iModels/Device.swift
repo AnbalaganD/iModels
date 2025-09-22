@@ -85,9 +85,9 @@ public enum Device {
         case "iPhone13,4": "iPhone 12 Pro Max"
         case "iPhone14,2": "iPhone 13 Pro"
         case "iPhone14,3": "iPhone 13 Pro Max"
-        case "iPhone14,4": "iPhone 13 Mini"
+        case "iPhone14,4": "iPhone 13 mini"
         case "iPhone14,5": "iPhone 13"
-        case "iPhone14,6": "iPhone SE 3rd Gen"
+        case "iPhone14,6": "iPhone SE (3rd generation)"
         case "iPhone14,7": "iPhone 14"
         case "iPhone14,8": "iPhone 14 Plus"
         case "iPhone15,2": "iPhone 14 Pro"
@@ -100,6 +100,7 @@ public enum Device {
         case "iPhone17,2": "iPhone 16 Pro Max"
         case "iPhone17,3": "iPhone 16"
         case "iPhone17,4": "iPhone 16 Plus"
+        case "iPhone17,5": "iPhone 16e"
             
         case "iPod1,1": "1st Gen iPod"
         case "iPod2,1": "2nd Gen iPod"
@@ -115,12 +116,12 @@ public enum Device {
         case "iPad2,2": "2nd Gen iPad GSM"
         case "iPad2,3": "2nd Gen iPad CDMA"
         case "iPad2,4": "2nd Gen iPad New Revision"
-        case "iPad3,1": "3rd Gen iPad"
-        case "iPad3,2": "3rd Gen iPad CDMA"
-        case "iPad3,3": "3rd Gen iPad GSM"
         case "iPad2,5": "iPad mini"
         case "iPad2,6": "iPad mini GSM+LTE"
         case "iPad2,7": "iPad mini CDMA+LTE"
+        case "iPad3,1": "3rd Gen iPad"
+        case "iPad3,2": "3rd Gen iPad CDMA"
+        case "iPad3,3": "3rd Gen iPad GSM"
         case "iPad3,4": "4th Gen iPad"
         case "iPad3,5": "4th Gen iPad GSM+LTE"
         case "iPad3,6": "4th Gen iPad CDMA+LTE"
@@ -171,8 +172,6 @@ public enum Device {
         case "iPad11,7": "iPad 8th Gen (WiFi+Cellular)"
         case "iPad12,1": "iPad 9th Gen (WiFi)"
         case "iPad12,2": "iPad 9th Gen (WiFi+Cellular)"
-        case "iPad14,1": "iPad mini 6th Gen (WiFi)"
-        case "iPad14,2": "iPad mini 6th Gen (WiFi+Cellular)"
         case "iPad13,1": "iPad Air 4th Gen (WiFi)"
         case "iPad13,2": "iPad Air 4th Gen (WiFi+Cellular)"
         case "iPad13,4": "iPad Pro 11 inch 5th Gen"
@@ -187,6 +186,8 @@ public enum Device {
         case "iPad13,17": "iPad Air 5th Gen (WiFi+Cellular)"
         case "iPad13,18": "iPad 10th Gen"
         case "iPad13,19": "iPad 10th Gen"
+        case "iPad14,1": "iPad mini 6th Gen (WiFi)"
+        case "iPad14,2": "iPad mini 6th Gen (WiFi+Cellular)"
         case "iPad14,3": "iPad Pro 11 inch 4th Gen"
         case "iPad14,4": "iPad Pro 11 inch 4th Gen"
         case "iPad14,5": "iPad Pro 12.9 inch 6th Gen"
@@ -202,10 +203,10 @@ public enum Device {
             
         case "Watch1,1": "Apple Watch 38mm case"
         case "Watch1,2": "Apple Watch 42mm case"
-        case "Watch2,6": "Apple Watch Series 1 38mm case"
-        case "Watch2,7": "Apple Watch Series 1 42mm case"
         case "Watch2,3": "Apple Watch Series 2 38mm case"
         case "Watch2,4": "Apple Watch Series 2 42mm case"
+        case "Watch2,6": "Apple Watch Series 1 38mm case"
+        case "Watch2,7": "Apple Watch Series 1 42mm case"
         case "Watch3,1": "Apple Watch Series 3 38mm case (GPS+Cellular)"
         case "Watch3,2": "Apple Watch Series 3 42mm case (GPS+Cellular)"
         case "Watch3,3": "Apple Watch Series 3 38mm case (GPS)"
@@ -249,7 +250,10 @@ public enum Device {
         case "Watch7,10": "Apple Watch Series 10 (GPS + Cellular)"
         case "Watch7,11": "Apple Watch Series 10 (GPS + Cellular)"
             
-        // TODO: Add other identifiers: AppleTV14,1 = Apple TV 4K (3rd Generation), RealityDevice14,1 = Apple Vision Pro
+        case "AppleTV14,1": "Apple TV 4K (3rd Generation)"
+            
+        case "RealityDevice14,1": "Apple Vision Pro"
+            
         default: nil
         }
     }
