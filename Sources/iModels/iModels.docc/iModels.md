@@ -14,12 +14,7 @@ iModels provides an easy way to determine the human-readable device model name f
 - ``Device/modelName``
 - ``Device/modelName(for:)``
 
-### Device Types
-
-- <doc:SupportedDevices>
-- <doc:DeviceIdentifiers>
-
-### Examples
+### Documentation
 
 - <doc:GettingStarted>
-- <doc:CommonUseCases>
+- <doc:SupportedDevices>
