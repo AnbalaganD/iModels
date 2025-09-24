@@ -11,17 +11,17 @@ import SwiftUI
 extension Device {
     static func image(for identifier: String) -> Image {
         if Device.modelName(for: identifier) == nil {
-            return Image(systemName: "questionmark")
+            Image(systemName: "questionmark")
         } else if identifier.contains("iPhone") {
-            return Image(systemName: "iphone")
+            Image(systemName: "iphone")
         } else if identifier.contains("iPod") {
-            return Image(systemName: "ipod")
+            Image(systemName: "ipod")
         } else if identifier.contains("iPad") {
-            return Image(systemName: "ipad")
+            Image(systemName: "ipad")
         } else if identifier.contains("Watch") {
-            return Image(systemName: "applewatch")
+            Image(systemName: "applewatch")
         } else {
-            return Image(systemName: "apple.logo")
+            Image(systemName: "apple.logo")
         }
     }
 }
