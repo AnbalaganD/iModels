@@ -22,9 +22,9 @@ jobs:
       run: swift test --xunit-output report.xml
     - name: Validate XML Report
       run: |
-        if [ $(xmllint --xpath "sum(//testsuite/@errors)" report.xml) -ne 0 ] || \
-          [ $(xmllint --xpath "sum(//testsuite/@failures)" report.xml) -ne 0 ] || \
-          [ $(xmllint --xpath "sum(//testsuite/@skipped)" report.xml) -ne 0 ]; then
+        if [ $(xmllint --xpath "sum(//testsuite/@errors)" report-swift-testing.xml) -ne 0 ] || \
+          [ $(xmllint --xpath "sum(//testsuite/@failures)" report-swift-testing.xml) -ne 0 ] || \
+          [ $(xmllint --xpath "sum(//testsuite/@skipped)" report-swift-testing.xml) -ne 0 ]; then
           echo "Test failures detected in XML report"
           exit 1
         fi
