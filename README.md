@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/iModels.svg?style=flat)](https://cocoapods.org/pods/iModels)
 [![License](https://img.shields.io/cocoapods/l/iModels.svg?style=flat)](LICENSE)
-[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://swiftpackageindex.com/AnbalaganD/iModels)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FAnbalaganD%2FiModels%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/AnbalaganD/iModels)
 
 This library facilitates developers in easily determining the device model, which is particularly valuable for gathering statistics on user device distribution. It offers various other benefits as well.
