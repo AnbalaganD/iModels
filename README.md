@@ -22,7 +22,7 @@ iModels is available through [SPM](https://github.com/AnbalaganD/iModels). Use b
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/AnbalaganD/iModels", .upToNextMajor(from: "0.1.6"))
+    .package(url: "https://github.com/AnbalaganD/iModels", .upToNextMajor(from: "0.1.7"))
 ]
 ```
 
