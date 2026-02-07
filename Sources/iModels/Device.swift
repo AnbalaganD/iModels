@@ -47,7 +47,7 @@ public enum Device {
     ///   the `SIMULATOR_MODEL_IDENTIFIER` environment variable.
     ///
     /// - Returns: A string representing the device's hardware identifier (e.g., "iPhone16,1").
-    public static var identifier: String {
+    public static let identifier: String = {
         let identifier: String
 #if targetEnvironment(simulator)
         identifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"]!
@@ -63,7 +63,7 @@ public enum Device {
         }
 #endif
         return identifier
-    }
+    }()
     
     /// The human-readable model name of the current device.
     ///
@@ -94,13 +94,13 @@ public enum Device {
     /// ```
     ///
     /// - Returns: The device's marketing name, or the raw identifier if unknown.
-    public static var modelName: String {
+    public static let modelName: String = {
 #if targetEnvironment(simulator)
         return "\(modelName(for: identifier) ?? identifier) Simulator"
 #else
         return modelName(for: identifier) ?? identifier
 #endif
-    }
+    }()
     
     /// Returns the human-readable model name for a specific device identifier.
     ///

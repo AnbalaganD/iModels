@@ -10,7 +10,7 @@ Add iModels to your project using Swift Package Manager:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/AnbalaganD/iModels", .upToNextMajor(from: "0.1.7"))
+    .package(url: "https://github.com/AnbalaganD/iModels", .upToNextMajor(from: "0.1.8"))
 ]
 ```
 
