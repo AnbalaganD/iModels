@@ -17,7 +17,9 @@ Complete list of Apple devices supported by iModels based on actual implementati
 - iPhone 13 mini, iPhone 13, iPhone 13 Pro, iPhone 13 Pro Max
 - iPhone 14, iPhone 14 Plus, iPhone 14 Pro, iPhone 14 Pro Max
 - iPhone 15, iPhone 15 Plus, iPhone 15 Pro, iPhone 15 Pro Max
-- iPhone 16, iPhone 16 Plus, iPhone 16 Pro, iPhone 16 Pro Max
+- iPhone 16, iPhone 16 Plus, iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16e
+- iPhone 17, iPhone 17 Pro, iPhone 17 Pro Max, iPhone 17e
+- iPhone 18 Pro, iPhone 18 Pro Max, iPhone Air, iPhone Duo
 
 ## iPad
 
@@ -27,13 +29,17 @@ Complete list of Apple devices supported by iModels based on actual implementati
 - iPad Air, iPad Air 2
 - iPad Air (3rd generation), iPad Air (4th generation), iPad Air (5th generation)
 - iPad Air 11-inch (M2), iPad Air 13-inch (M2)
+- iPad Air 11-inch (M3), iPad Air 13-inch (M3)
+- iPad Air 11-inch (M4), iPad Air 13-inch (M4)
 - iPad (5th generation) through iPad (10th generation)
 - iPad Pro (9.7-inch), iPad Pro (10.5-inch)
 - iPad Pro (11-inch), iPad Pro (11-inch) (2nd generation), iPad Pro (11-inch) (3rd generation), iPad Pro (11-inch) (4th generation)
 - iPad Pro (12.9-inch), iPad Pro (12.9-inch) (2nd generation), iPad Pro (12.9-inch) (3rd generation), iPad Pro (12.9-inch) (4th generation), iPad Pro (12.9-inch) (5th generation), iPad Pro (12.9-inch) (6th generation)
 - iPad Pro 11-inch (M4), iPad Pro 13-inch (M4)
+- iPad Pro 11-inch (M5), iPad Pro 13-inch (M5)
 - iPad mini, iPad mini 2, iPad mini 3, iPad mini 4
-- iPad mini (5th generation), iPad mini (6th generation)
+- iPad mini (5th generation), iPad mini (6th generation), iPad mini (A17 Pro), iPad mini (A20 Pro)
+- iPad (A16)
 
 ## Apple Watch
 
@@ -52,6 +58,10 @@ Complete list of Apple devices supported by iModels based on actual implementati
 - Apple Watch Series 9 (GPS), Apple Watch Series 9 (GPS + Cellular)
 - Apple Watch Ultra 2
 - Apple Watch Series 10 (GPS), Apple Watch Series 10 (GPS + Cellular)
+- Apple Watch SE 3 (GPS), Apple Watch SE 3 (GPS + Cellular)
+- Apple Watch Ultra 3, Apple Watch Ultra 4
+- Apple Watch Series 11 (GPS), Apple Watch Series 11 (GPS + Cellular)
+- Apple Watch Series 12 (GPS), Apple Watch Series 12 (GPS + Cellular)
 
 ## iPod touch
 
@@ -67,6 +77,7 @@ Complete list of Apple devices supported by iModels based on actual implementati
 - Apple TV 4K
 - Apple TV 4K (2nd generation)
 - Apple TV 4K (3rd generation)
+- Apple TV 4K (4th generation)
 
 ## Apple Vision
 
